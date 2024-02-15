@@ -11,7 +11,7 @@ import { Button } from "./ui/button";
 
 const Sidebar = () => {
   return (
-    <section className="lg:col-span-2 hidden md:flex flex-col gap-y-2 h-full p-2">
+    <section className="md:col-span-2 hidden md:flex flex-col gap-y-2 h-full p-2">
       <div className="p-3 pl-6 mb-2 flex items-center w-full">
         <h1 className="font-black text-3xl text-primary text-purple-700">W</h1>
         <Button className="h-auto p-2 ml-auto" variant="ghost">

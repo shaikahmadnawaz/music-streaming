@@ -5,10 +5,10 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Home() {
   return (
-    <main className="grid lg:grid-cols-12">
+    <main className="grid md:grid-cols-12">
       <Sidebar />
-      <section className="lg:border lg:col-span-8 bg-neutral-900">
-        <ScrollArea className="h-screen -mt-[100px] px-1">
+      <section className="md:border md:col-span-8 bg-neutral-900">
+        <ScrollArea className="h-[85vh] px-1">
           <div className="space-y-1">
             <Button
               variant="ghost"
