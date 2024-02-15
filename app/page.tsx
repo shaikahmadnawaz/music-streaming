@@ -1,5 +1,12 @@
-import Image from "next/image";
+import Profile from "@/components/Profile";
+import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
-  return <main>Hello</main>;
+  return (
+    <main className="grid lg:grid-cols-12">
+      <Sidebar />
+      <section className="lg:border lg:col-span-7">Home</section>
+      <Profile />
+    </main>
+  );
 }
