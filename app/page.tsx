@@ -5,10 +5,10 @@ import Sidebar from "@/components/sidebar/sidebar";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { albums } from "@/components/home/albums";
+import { albums } from "@/data/albums";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 import Image from "next/image";
-import { releases } from "@/components/home/releases";
+import { releases } from "@/data/releases";
 
 export default function Home() {
   return (
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="grid md:grid-cols-4 grid-cols-1 space-x-4 pt-4 pb-4">
+              <div className="grid md:grid-cols-4 grid-cols-1 space-y-4 md:space-y-0 md:space-x-4 pt-4 pb-4">
                 {releases.map((release) => (
                   <ForYouAlbum
                     key={release.name}

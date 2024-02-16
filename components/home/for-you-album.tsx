@@ -1,4 +1,4 @@
-import { Album } from "@/components/home/albums";
+import { Album } from "@/data/albums";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
