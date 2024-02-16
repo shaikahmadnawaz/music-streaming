@@ -26,10 +26,10 @@ const Profile = () => {
           </div>
           <div className="p-2 flex gap-x-2 justify-center items-center">
             <Button variant="ghost" className="p-1">
-              <BellDot className="h-4 w-4" />
+              <BellDot className="h-6 w-6" />
             </Button>
             <Button variant="ghost" className="p-1">
-              <ChevronDown className="h-4 w-4" />
+              <ChevronDown className="h-6 w-6" />
             </Button>
           </div>
         </div>
