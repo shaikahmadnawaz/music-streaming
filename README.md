@@ -6,8 +6,6 @@ This project is a Next.js based implementation of a music streaming web app.
 
 A live demo of the application can be found at [Live Demo URL](https://next-music-streaming.vercel.app).
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Tech Stack
 
 - [Next.js](https://nextjs.org)
@@ -16,6 +14,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Approaching the Problem
 
 Started by drawing this basic layout:
+
+![layout](https://github.com/shaikahmadnawaz/music-streaming/assets/96189881/0eeb8066-9c51-48a9-90fb-0c8281e64c7a)
 
 ## Getting Started
 
