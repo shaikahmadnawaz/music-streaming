@@ -15,7 +15,7 @@ import { Slider } from "./ui/slider";
 
 const Player = () => {
   return (
-    <div className="fixed border-t-2 bottom-0 w-full py-2 h-[15vh] px-4">
+    <div className="fixed border-t-2 z-[9999] bottom-0 w-full py-2 h-[15vh] px-4">
       <div className="grid grid-cols-2 justify-center items-center md:grid-cols-3 h-full">
         <div className="flex justify-start">
           <div className="px-4 w-3/6 mb-2 flex items-center justify-between">

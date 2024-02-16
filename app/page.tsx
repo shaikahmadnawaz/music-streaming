@@ -1,5 +1,5 @@
 import ForYouAlbum from "@/components/home/for-you-album";
-import Profile from "@/components/Profile";
+import Profile from "@/components/profile/profile";
 import SearchBar from "@/components/home/searchbar";
 import Sidebar from "@/components/sidebar/sidebar";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
