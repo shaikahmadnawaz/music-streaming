@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="grid md:grid-cols-12">
       <Sidebar />
-      <section className="md:border md:col-span-8 bg-neutral-900">
+      <section className="md:border md:col-span-7 bg-neutral-900">
         <ScrollArea className="h-[85vh] px-1">
           <div className="space-y-1">
             <Button
