@@ -8,6 +8,7 @@ import { ScrollArea } from "../ui/scroll-area";
 import Playlist from "./playlist";
 
 import { releases } from "@/data/releases";
+import Link from "next/link";
 
 const Profile = () => {
   return (
@@ -37,7 +38,9 @@ const Profile = () => {
         <div className="mt-2">
           <div className="flex justify-between items-center mb-1 w-full">
             <p className="font-semibold text-lg">Recently Played</p>
-            <p className="text-neutral-300">See all</p>
+            <Link href="/">
+              <p className="text-neutral-300">See all</p>
+            </Link>
           </div>
 
           {albums.map((album, index) => (
@@ -48,7 +51,9 @@ const Profile = () => {
         <div className="mt-2">
           <div className="flex justify-between items-center mb-1 w-full">
             <p className="font-semibold text-lg">My Playlist</p>
-            <p className="text-neutral-300">See all</p>
+            <Link href="/">
+              <p className="text-neutral-300">See all</p>
+            </Link>
           </div>
 
           {releases.map((release, index) => (

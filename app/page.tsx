@@ -9,6 +9,8 @@ import { albums } from "@/data/albums";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 import Image from "next/image";
 import { releases } from "@/data/releases";
+import Link from "next/link";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Home() {
   return (
@@ -35,24 +37,27 @@ export default function Home() {
               </Button>
             </div>
           </div>
-
-          <div className="flex justify-center items-center">
-            <AspectRatio ratio={23 / 9} className="bg-muted">
-              <Image
-                src="/banner.jpg"
-                alt="Random Image"
-                fill
-                className="rounded-md object-cover shadow-md"
-              />
-            </AspectRatio>
-          </div>
+          <Link href="/">
+            <div className="flex justify-center items-center">
+              <AspectRatio ratio={23 / 9} className="bg-muted">
+                <Image
+                  src="/banner.jpg"
+                  alt="Random Image"
+                  fill
+                  className="rounded-md object-cover shadow-md"
+                />
+              </AspectRatio>
+            </div>
+          </Link>
 
           <div className="pt-2">
             <div className="space-y-1 flex justify-between items-center">
               <h2 className="text-2xl font-semibold tracking-tight">
                 Hello, Nawaz
               </h2>
-              <p className="text-sm text-neutral-300">See all</p>
+              <Button variant="ghost" className="text-sm text-muted-foreground">
+                See all
+              </Button>
             </div>
 
             <div className="relative">
@@ -74,7 +79,9 @@ export default function Home() {
               <h2 className="text-2xl font-semibold tracking-tight">
                 New releases for you
               </h2>
-              <p className="text-sm text-muted-foreground">See all</p>
+              <Button variant="ghost" className="text-sm text-muted-foreground">
+                See all
+              </Button>
             </div>
 
             <div className="relative">
