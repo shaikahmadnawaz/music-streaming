@@ -1,18 +1,16 @@
-import { Album } from "@/data/albums";
+import { Album } from "@/components/home/albums";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
 
 interface ForYouAlbumProps extends React.HTMLAttributes<HTMLDivElement> {
   album: Album;
-  aspectRatio?: "portrait" | "square";
   width?: number;
   height?: number;
 }
 
 const ForYouAlbum = ({
   album,
-  aspectRatio = "portrait",
   width,
   height,
   className,
@@ -26,15 +24,12 @@ const ForYouAlbum = ({
           alt={album.name}
           width={width}
           height={height}
-          className={cn(
-            "h-auto w-auto object-cover transition-all hover:scale-105",
-            aspectRatio === "portrait" ? "aspect-[3/4]" : "aspect-square"
-          )}
+          className="h-56 w-full rounded-xl object-cover shadow-xl transition-transform transform hover:scale-105 duration-300 ease-in-out"
         />
       </div>
       <div className="space-y-1 text-sm">
         <h3 className="font-medium leading-none">{album.name}</h3>
-        <p className="text-xs text-muted-foreground">{album.artist}</p>
+        <p className="text-xs text-neutral-400">{album.artist}</p>
       </div>
     </div>
   );
