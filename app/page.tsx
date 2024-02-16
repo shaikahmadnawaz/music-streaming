@@ -1,8 +1,7 @@
 import ForYouAlbum from "@/components/ForYouAlbum";
 import Profile from "@/components/Profile";
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "@/components/sidebar/sidebar";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { albums } from "@/data/albums";
@@ -19,7 +18,7 @@ export default function Home() {
     <main className="grid md:grid-cols-12">
       <Sidebar />
       <ScrollArea className="h-[85vh] md:col-span-7">
-        <section className="md:border flex flex-col gap-y-7 p-4 bg-neutral-900">
+        <section className="md:border flex flex-col gap-y-7 p-2 md:p-6 bg-neutral-900">
           <div className="flex justify-between gap-x-6 items-center">
             <div className="flex justify-between items-center gap-x-2">
               <ChevronLeft className="h-6 w-6" />
