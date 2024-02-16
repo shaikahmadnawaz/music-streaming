@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Music Streaming",
-  description: "Music Streaming App built with Next.js",
+  description: "Music Streaming App built with Next.js and Tailwind CSS",
 };
 
 export default function RootLayout({
